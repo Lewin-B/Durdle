@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>DURDLE</title>
+</head>
+<body>
+
+    <div class="header">
+        <button class="inst">How to play</button>
+    </div>
+
+    <div class="popup" id="howToPlayPopup">
+        <div class="popup-content">
+          <h3>How to Play</h3>
+          <li>You get 10 guesses to guess the movie</li>
+          <li>If a category field becomes green its a match</li>
+          <li>If the year field turns yellow that means you're within 10 years of that year</li>
+          <li>If the Actor field turns green it will only display the matching actors found</li>
+          <li>Genres: Action, Adventure, Animation, Comedy, Crime, Documentary, Drama, Family, Fantasy, History, Horror, Music, Mystery, Romance, Scientific Fiction, Thriller, War, and Western</li>
+          <button class="close">Close</button>
+        </div>
+    </div>
+
+    <div class="body">
+        <h1>DURDLE</h1>
+        <h2>Movie Guessing Game</h2>
+        <p class="guess-counter"></p>
+        <div class="search-wrapper">
+            <div class="search-container">
+              <input type="text" id="search-input" placeholder="Search...">
+              <button><i class="fa-solid fa-angle-down"></i></button>
+            </div>
+            <div class="result-box"></div>
+        </div>
+        <div class="game_wrapper">
+            <div class="game_table_head">
+                <div class="guess-name"><p>Name</p></div>
+                <div class="guess-year"><p>Year</p></div>
+                <div class="guess-directors"><p>Director</p></div>
+                <div class="guess-actors"><p>Cast</p></div>
+                <div class="guess-genres"><p>Genre</p></div>
+            </div>
+            <div class="game_table_row">
+                <!-- Guess rows will be added dynamically here -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button>Contact</button>
+    </div>
+
+    <!-- "Contact" Popup -->
+    <div class="popup" id="contactPopup">
+        <div class="popup-content">
+            <h3>Contact</h3>
+            <p>Contact me in case of bugs or suggestions</p>
+            <p>Email: lwbobda@gmail.com</p>
+            <button class="close">Close</button>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h3>Congratulations!</h3>
+            <p>You selected the correct movie:</p>
+            <h4 id="popup-movie-name"></h4>
+            <img src="" alt="" id="popup-movie-image" />
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+
+    <div class="popup" id="incorrect-popup">
+        <div class="popup-content">
+            <h3>Incorrect!</h3>
+            <p>The correct answer was:</p>
+            <h4 id="popup-movie-name2"></h4>
+            <img src="" alt="" id="popup-movie-image2" />
+            <button class="play-again2">Play Again</button>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/2851ce8c7e.js" crossorigin="anonymous"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
